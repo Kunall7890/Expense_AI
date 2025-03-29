@@ -1,69 +1,82 @@
-# Welcome to your Lovable project
+Expense_AI 💰
+🚀 Project Overview
+Expense_AI is a smart expense management application designed to help users track, analyze, and optimize their spending using AI-powered insights. It offers a sleek, responsive UI and real-time analytics.
 
-## Project info
+🛠️ Tech Stack:
 
-**URL**: https://lovable.dev/projects/8d851723-705f-4a83-8e97-210fe624ff01
+Vite – Fast build tool for modern web apps
 
-## How can I edit this code?
+TypeScript – Ensures type safety and code reliability
 
-There are several ways of editing your application.
+React – Component-based UI framework
 
-**Use Lovable**
+Shadcn-UI – Modern, customizable UI components
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8d851723-705f-4a83-8e97-210fe624ff01) and start prompting.
+Tailwind CSS – Utility-first styling framework
 
-Changes made via Lovable will be committed automatically to this repo.
+Node.js – Backend server (if applicable)
 
-**Use your preferred IDE**
+MongoDB / PostgreSQL – Database (if applicable)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+⚙️ Getting Started
+1. Clone the Repository
+sh
+Copy
+Edit
 git clone <YOUR_GIT_URL>
+cd Expense_AI
+2. Install Dependencies
+Ensure you have Node.js and npm installed. Install the necessary dependencies:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+sh
+Copy
+Edit
+npm install
+3. Run the Development Server
+Start the server with live reload and instant preview:
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+sh
+Copy
+Edit
 npm run dev
-```
+Open http://localhost:5173 in your browser.
 
-**Edit a file directly in GitHub**
+🛠️ Editing the Code
+Option 1: Using Your Local IDE
+Open the project in your preferred IDE (VS Code, WebStorm, etc.)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Modify the code
 
-**Use GitHub Codespaces**
+Commit and push the changes:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+sh
+Copy
+Edit
+git add .
+git commit -m "Your message"
+git push origin main
+Option 2: GitHub Codespaces
+Click the "Code" button on GitHub
 
-## What technologies are used for this project?
+Select the "Codespaces" tab
 
-This project is built with .
+Click "New codespace"
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Edit directly in the cloud IDE and push changes
 
-## How can I deploy this project?
+🚀 Deployment
+To deploy your project:
 
-Simply open [Lovable](https://lovable.dev/projects/8d851723-705f-4a83-8e97-210fe624ff01) and click on Share -> Publish.
+Use Netlify, Vercel, or Render for quick deployment
 
-## I want to use a custom domain - is that possible?
+Push your changes to GitHub
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+Connect the repo to the deployment platform
+
+Deploy with a custom domain or use the default URL
+
+🛡️ License
+This project is licensed under the MIT License. Feel free to modify and use it for your personal or commercial projects.
+
+🤝 Contributing
+Contributions are welcome! Feel free to submit a PR or suggest improvements.
