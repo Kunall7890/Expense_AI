@@ -1,7 +1,10 @@
 
 import React from "react";
-import { MessageSquare } from "lucide-react";
-import ChatContainer from "../components/ChatContainer";
+import { CreditCard, PieChart, Zap } from "lucide-react";
+import ExpenseForm from "../components/ExpenseForm";
+import ExpenseList from "../components/ExpenseList";
+import ExpenseSummaryChart from "../components/ExpenseSummaryChart";
+import InsightsList from "../components/InsightsList";
 
 const Index = () => {
   return (
@@ -9,45 +12,45 @@ const Index = () => {
       {/* Header */}
       <header className="bg-chatbot-primary text-white py-4 px-6 shadow-md">
         <div className="container mx-auto flex items-center">
-          <MessageSquare className="mr-2" />
-          <h1 className="text-xl font-semibold">ChatMood</h1>
+          <CreditCard className="mr-2" />
+          <h1 className="text-xl font-semibold">ExpenseAI</h1>
           <span className="ml-2 text-xs bg-chatbot-secondary px-2 py-0.5 rounded-full">
-            Sentiment Analysis
+            Smart Expense Tracker
           </span>
         </div>
       </header>
 
       {/* Main content */}
       <main className="flex-1 container mx-auto p-4 md:p-6 flex flex-col md:flex-row gap-6">
-        <div className="flex-1 bg-white rounded-lg shadow-sm overflow-hidden border flex flex-col h-[70vh] md:h-[80vh]">
-          <ChatContainer />
+        <div className="flex-1 space-y-6">
+          <ExpenseForm />
+          <ExpenseList />
         </div>
         
         <div className="w-full md:w-80 space-y-6">
+          <ExpenseSummaryChart />
+          <InsightsList />
+          
           <div className="bg-white p-6 rounded-lg shadow-sm border">
-            <h2 className="text-lg font-medium mb-3">About ChatMood</h2>
-            <p className="text-gray-600 text-sm">
-              ChatMood is an AI-powered chatbot that can analyze the sentiment of your messages. 
-              Try expressing different emotions in your messages and see how the bot responds!
+            <div className="flex items-start gap-3 mb-3">
+              <Zap className="h-5 w-5 text-purple-500" />
+              <h2 className="text-lg font-medium">AI-Powered Insights</h2>
+            </div>
+            <p className="text-sm text-gray-600">
+              ExpenseAI analyzes your spending patterns to provide personalized insights 
+              and recommendations to help you manage your finances better.
             </p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-sm border">
-            <h2 className="text-lg font-medium mb-3">How It Works</h2>
-            <ul className="text-sm text-gray-600 space-y-2">
-              <li className="flex items-start">
-                <span className="text-chatbot-positive mr-2">😊</span>
-                <span>Positive messages are recognized as happy or satisfied</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-chatbot-neutral mr-2">😐</span>
-                <span>Neutral messages have no strong emotional tone</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-chatbot-negative mr-2">😞</span>
-                <span>Negative messages express frustration or disappointment</span>
-              </li>
-            </ul>
+            <div className="flex items-start gap-3 mb-3">
+              <PieChart className="h-5 w-5 text-blue-500" />
+              <h2 className="text-lg font-medium">Spending Visualization</h2>
+            </div>
+            <p className="text-sm text-gray-600">
+              Track where your money goes with clear, interactive charts. 
+              Gain visibility into your spending habits across different categories.
+            </p>
           </div>
         </div>
       </main>
@@ -55,7 +58,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-gray-100 py-4 px-6 border-t">
         <div className="container mx-auto text-center text-sm text-gray-500">
-          ChatMood - AI-powered sentiment analysis chatbot
+          ExpenseAI - Smart expense tracking with AI insights
         </div>
       </footer>
     </div>
