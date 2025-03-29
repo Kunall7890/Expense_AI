@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from "react";
 import { Message, SentimentType } from "../types/chat";
 import ChatMessage from "./ChatMessage";
@@ -13,7 +12,7 @@ const ChatContainer: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
-
+  
   // Initialize chat with a greeting
   useEffect(() => {
     const greeting: Message = {
